@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+<style>
+h1{
+	text-shadow: 10px 10px 8px #151715;
+}
+	body{
+		background-image:url(ppp.jpg);
+		background-position: cover;
+		background-size: 100%;
+		background-repeat: no-repeat;
+}
+ form{
+ 	
+ 	height:50%;
+ 	width:25%;
+ 	position :;
+    
+ }
+ input[type=text],input[type=password]{
+ 	width:100%;
+ 	padding:12px 20px;
+ 	margin:8px 0;
+ 	display:inline-block;
+ 	border:1px solid #ccc;
+ 	box-sizing: border-box;
+ }
+ button{
+ 	background-color: #535FE3;
+ 	color: white;
+ 	padding: 14px 20px;
+ 	margin:8px 0;
+ 	cursor:pointer;
+ 	width:100%; 
+ }
+ button:hover{
+ 	opacity:0.8;
+ }
+ 
+
+ img.container{
+ 	text-align:center;
+ 	margin:24px 0 12px 0;
+ 	
+ }
+ fieldset{
+ 	background-color: #CCC;
+ }
+
+img.avatar{
+	width:40%;
+	border-radius:50%;	
+}
+.container{
+	background-color: white;
+	padding:16px;
+}
+span.psw{
+	float:rigth;
+	padding-top:16px;
+}
+
+@media screen and(max-width:300px)
+{
+	span.psw{
+		display:block;
+		float:none;
+	}
+	.cancelbtn{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body>
+	<script>
+   function myfunc(){
+   	var x1=document.getElementById('uname');
+   	var x2=document.getElementById('pass');
+   	if(x1.value==""||x2.value==""){
+   	alert("Login First");
+   }
+}
+</script>
+
+	<h1><label><b><center>LOGIN</center><b></label></h1>
+	<br>
+	<br>
+<form action="/action_page.php">
+	<fieldset>
+		
+	
+	<div class ="imgcontainer" style="background-color: white" >
+		<center><img src = "kpp.jpg" class="avatar"></center>
+	</div>
+
+	<div class = "container">
+		<label>
+			<b>Username</b>
+		</label>
+			<input type="text" id="uname" placeholder="Enter Username"
+			name="name" required>
+
+			<label for="psw"><b>Password</b>
+			</label>
+			<input type = "password" id="pass" placeholder="Enter Password" name="psw" required>
+
+			<button type="submit" onclick="myfunc()" >Login</button>
+			<label>
+				<input type="checkbox" checked name="remember">Remember me
+				
+
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				
+				<span class = "psw">Forgot<a href = "#">Password?</a></span>
+			</label>
+			<a href = "REgister.html"><button class = "reg" type = "button">SignUp</button></a>
+		</div>
+
+		<div class="ks" style="background-color:#f1f1f1">
+			
+		</div>
+	</fieldset>
+</form>
+</body>
+</html>
